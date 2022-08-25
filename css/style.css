@@ -1,0 +1,265 @@
+/*Document Setup*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1, h2, blockquote {
+    font-family: "Lobster", sans-serif;
+}
+
+
+/*Navigation*/
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    padding: 0.5em 0.5em 0 0.5em;
+    margin: 0;
+}
+
+.top-nav-links {
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 50%;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 3em;
+}
+
+
+.top-nav li {
+    margin: 0.5em 0;
+    width: 100%;
+    background-color: dimgrey;
+    padding: 0.5em 0;
+    border-radius: 50px;
+}
+
+.top-nav li:hover {
+    background-color: #415a77;
+}
+
+
+/*Horizontal Rule*/
+
+hr {
+    margin: 0;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Planet Section*/
+
+.container {
+    background-color: #415a77;
+    min-height: 95vh;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-section {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.planet-section h2 {
+    font-size: 3em;
+    align-self: center;
+}
+
+/*Planet Table*/
+.planet-section table {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.planet-section th {
+    width: 33%;
+    color: black;
+}
+
+.planet-section th, .planet-section td {
+    border-right: 1px solid black;
+    padding: 0.5em;
+}
+
+.planet-section th:nth-of-type(3), .planet-section td:nth-of-type(3) {
+    border-right: none;
+}
+
+
+/*Planet Description*/
+
+.planet-section p em {
+    font-size: 2em;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+}
+
+.planet-section p {
+    width: 80%;
+    margin: 1.5em;
+    text-align: justify;
+}
+
+
+/*Quote*/
+
+.hello-graphic {
+    position: relative;
+    margin-top: 3.5em;
+}
+
+img {
+    width: 100%;
+}
+
+#bubble {
+    width: 9em;
+    position: absolute;
+    top: -1em;
+    right: 0;
+}
+
+blockquote {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 0.9em;
+    right: 0.5em;
+}
+
+cite {
+    font-size: 0.65em;
+}
+
+
+/*Footer*/
+
+footer {
+    height: 4em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #415a77;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5em 15%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+footer a:hover {
+    background-color: #415a77;
+    border-radius: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    /*Navigation*/
+
+    .top-nav {
+        height: 11em;
+    }
+
+    .top-nav ul {
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        margin: 0 0 0 0;
+    }
+
+    .top-nav li {
+        margin: 0;
+        width: 10%;
+        border-radius: 20px 20px 0 0;
+        background-color: black;
+        border: 1px solid #415a77;
+        border-bottom: none;
+    }
+
+    .top-nav li.active {
+        background-color: #415a77;
+    }
+
+    .top-nav a {
+        padding: 0.5em 0;
+    }
+
+
+    /*Planet Section*/
+
+    html {
+        min-height: 100%;
+        position: relative;
+        background-color: #415a77;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .container {
+        min-height: 0;
+        visibility: visible;
+        margin-bottom: 0;
+    }
+
+    .content-container {
+        margin-left: 6em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .planet-section {
+        width: 50vw;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .hello-graphic {
+        position: absolute;
+        left: 50%;
+        top: 35%
+    }
+}
