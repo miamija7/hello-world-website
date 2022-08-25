@@ -12,4 +12,4 @@ An interactive hello-world website created for desktop and mobile devices.
 - mobile view
 
 ## mobile demo
-  <img src="img/helloworld-mobile.gif" height="300"/>
+  <img src="https://github.com/miamija7/hello-world-website/blob/main/img/helloworld-mobile.GIF" height="300"/>
